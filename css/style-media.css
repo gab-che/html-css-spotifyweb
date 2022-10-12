@@ -1,0 +1,16 @@
+/* Mobile - schermo piccolo - SM */
+@media screen and (min-width: 568px){
+    .sidebar-container{
+        width: 250px;
+    }
+}
+
+/* Tablet - schermo medio - MD */
+@media screen and (min-width: 768px){
+
+}
+
+/* Desktop - schermo grande - LG */
+@media screen and (min-width: 992px){
+
+}
