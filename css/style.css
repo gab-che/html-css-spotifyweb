@@ -32,6 +32,14 @@ img{
     width: 100%;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* Proprietà flex */
 .flex{
     display: flex;
@@ -60,7 +68,7 @@ img{
     background-color: var(--bg-sidebar);
 }
 
-.main.container{
+.main-container{
     overflow: auto;
 }
 
@@ -98,13 +106,37 @@ img{
 /* Proprietà sidebar */
 .sidebar-container{
     padding: .5rem;
+    flex-direction: column;
+}
+.sidebar-top{
+    background-color: slateblue;
+}
+
+.sidebar-middle{
+    background-color: darkcyan;
+    overflow: auto;
+}
+
+.sidebar-bottom{
+    background-color: darkgrey;
+    /* altezza da togliere */
+    height: 100px;
 }
 
 .logo-container-small{
-    width: 50px;
+    width: 40px;
     margin: auto;
 }
 
 .logo-container-big{
+    display: none;
+}
+
+.link-list i{
+    font-size: 30px;
+    vertical-align: middle
+}
+
+.link-list span{
     display: none;
 }
