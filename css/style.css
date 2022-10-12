@@ -40,6 +40,10 @@ a{
     text-decoration: none;
 }
 
+i{
+    font-size: 30px;
+}
+
 /* Proprietà flex */
 .flex{
     display: flex;
@@ -58,6 +62,10 @@ a{
 }
 
 /* Container principali */
+.top-container{
+    height: calc(100vh - 80px);
+}
+
 .bottom-container{
     height: 80px;
     background-color: var(--bg-footer);
@@ -108,19 +116,22 @@ a{
     padding: .5rem;
     flex-direction: column;
 }
-.sidebar-top{
-    
+
+.sidebar-container i{
+    vertical-align: middle
 }
+
+/* .sidebar-top{
+    
+} */
 
 .sidebar-middle{
     overflow: auto;
 }
 
-.sidebar-bottom{
-    background-color: darkgrey;
-    /* altezza da togliere */
-    height: 100px;
-}
+/* .sidebar-bottom{
+    
+} */
 
 .logo-container-small{
     width: 40px;
@@ -131,15 +142,18 @@ a{
     display: none;
 }
 
-.link-list i{
-    font-size: 30px;
-    vertical-align: middle
-}
-
-.link-list span{
+.sidebar-container span{
     display: none;
 }
 
 .playlist{
     display: none;
+}
+
+.download i{
+    font-size: 15px;
+}
+
+.profile-name{
+    border-top: 1px solid var(--text-secondary);
 }

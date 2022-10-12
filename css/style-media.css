@@ -4,6 +4,11 @@
         width: 250px;
     }
 
+    .sidebar-container span{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
     .logo-container-small{
         display: none;
     }
@@ -11,12 +16,7 @@
     .logo-container-big{
         width: 70%;
         display: block;
-    }
-
-    .link-list span{
-        display: inline-block;
-        vertical-align: middle;
-    }
+    }   
 
     .playlist{
         display: block;
