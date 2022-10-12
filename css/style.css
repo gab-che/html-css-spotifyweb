@@ -23,6 +23,15 @@ body{
     flex-direction: column;
 }
 
+section{
+    padding: 1rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
 /* Proprietà flex */
 .flex{
     display: flex;
@@ -72,28 +81,17 @@ body{
     padding: 1rem;
 }
 
-section{
-    padding: 1rem;
-}
-
 .row{
     margin: 0 -.5rem;
 }
 
 .col-1_2{
     flex-basis: calc(100% / 2);
-    /* altezza da togliere */
-    height: 100px;
 }
 
 .card-container{
     padding: 0.5rem;
-    /* altezza da togliere */
-    height: 100%;
 }
 
 .card{
-    border: 1px solid firebrick;
-    /* altezza da togliere */
-    height: 100%;
 }
