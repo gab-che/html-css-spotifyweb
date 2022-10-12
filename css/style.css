@@ -109,11 +109,10 @@ a{
     flex-direction: column;
 }
 .sidebar-top{
-    background-color: slateblue;
+    
 }
 
 .sidebar-middle{
-    background-color: darkcyan;
     overflow: auto;
 }
 
@@ -138,5 +137,9 @@ a{
 }
 
 .link-list span{
+    display: none;
+}
+
+.playlist{
     display: none;
 }
