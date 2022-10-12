@@ -76,9 +76,24 @@ section{
     padding: 1rem;
 }
 
+.row{
+    margin: 0 -.5rem;
+}
+
 .col-1_2{
     flex-basis: calc(100% / 2);
-    border: 1px dashed goldenrod;
     /* altezza da togliere */
     height: 100px;
+}
+
+.card-container{
+    padding: 0.5rem;
+    /* altezza da togliere */
+    height: 100%;
+}
+
+.card{
+    border: 1px solid firebrick;
+    /* altezza da togliere */
+    height: 100%;
 }
