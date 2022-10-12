@@ -7,10 +7,14 @@
 
 /* Tablet - schermo medio - MD */
 @media screen and (min-width: 768px){
-
+    .col-1_4{
+        flex-basis: calc(100% / 4);
+    }
 }
 
 /* Desktop - schermo grande - LG */
 @media screen and (min-width: 992px){
-
+    .col-1_6{
+        flex-basis: calc(100% / 6);
+    }
 }

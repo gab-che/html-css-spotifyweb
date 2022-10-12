@@ -18,6 +18,7 @@
 body{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
 }
@@ -35,11 +36,11 @@ body{
     flex-shrink: 0;
 }
 
-/* Container */
-.top-container{
-    background-color:antiquewhite;
+.wrap{
+    flex-wrap: wrap;
 }
 
+/* Container */
 .bottom-container{
     height: 80px;
     background-color: var(--bg-footer);
@@ -48,4 +49,36 @@ body{
 .sidebar-container{
     width: 80px;
     background-color: var(--bg-sidebar);
+}
+
+.main.container{
+    overflow: auto;
+}
+
+.header{
+    background-color: var(--bg-header);
+    padding: 2rem;
+    /* position fixed? */
+}
+
+.main-section{
+    background-color: var(--bg-main);
+    /* da togliere */
+    height: 100%;
+}
+
+.menu{
+    background-color: beige;
+    padding: 1rem;
+}
+
+section{
+    padding: 1rem;
+}
+
+.col-1_2{
+    flex-basis: calc(100% / 2);
+    border: 1px dashed goldenrod;
+    /* altezza da togliere */
+    height: 100px;
 }
