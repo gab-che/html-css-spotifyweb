@@ -159,6 +159,32 @@ h5{
     padding: 0.5rem;
 }
 
+/* Proprietà sezione centrale */
+.card-img{
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay button i{
+    font-size: 3rem;
+}
+
+.card-img:hover .overlay{
+    opacity: 1;
+}
+
+.round-img img,
+.overlay-round{
+    border-radius: 50%;
+}
+
 /* Proprietà sidebar */
 .logo-container-small,
 .sidebar-container img{
@@ -204,7 +230,7 @@ h5{
     text-align: center;
 }
 .sidebar-bottom .download{
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 .sidebar-bottom .download img{
@@ -233,6 +259,7 @@ h5{
 /* Proprietà footer */
 .player-left .link-list{
     flex-direction: column;
+    padding-left: var(--standard-size);
 }
 
 .player-middle{
@@ -257,13 +284,17 @@ h5{
 
 .progress-bar-music{
     width: 100%;
-    margin: 0 .5rem;
+    margin: 0 3%;
 }
 
 .progress-bar-vol{
     width: 70px;
     margin-left: .5rem;
     margin-right: -.5rem;
+}
+
+.time{
+    font-size: .8rem;
 }
 
 .player-right i{

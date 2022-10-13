@@ -36,7 +36,8 @@
         display: block;
     }
 
-    .sidebar-bottom{
+    .sidebar-bottom,
+    .sidebar-middle{
         width: 100%;
         text-align: start;
     }
@@ -74,6 +75,7 @@
 
     .player-left .link-list{
         flex-direction: row;
+        padding-left: 2rem;
     }
 }
 
@@ -85,5 +87,9 @@
 
     .col-1_6{
         flex-basis: calc(100% / 6);
+    }
+
+    .overlay button i{
+        font-size: 2rem;
     }
 }
