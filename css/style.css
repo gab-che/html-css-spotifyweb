@@ -47,6 +47,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--text-primary);
+}
+
 button{
     background-color: transparent;
     border: none;
@@ -134,14 +138,6 @@ h5{
     font-size: .8rem;
 }
 
-.header button{
-    display: block;
-    margin-left: auto;
-    border: 1px solid var(--text-primary);
-    padding: var(--standard-size) 3rem;
-    border-radius: 25px;
-}
-
 .menu{
     padding: var(--standard-size);
 }
@@ -160,6 +156,18 @@ h5{
 }
 
 /* Proprietà sezione centrale */
+.header button{
+    display: block;
+    margin-left: auto;
+    border: 1px solid var(--text-primary);
+    padding: var(--standard-size) 3rem;
+    border-radius: 25px;
+}
+
+.header button:hover{
+    transform: scale(1.03);
+}
+
 .card-img{
     position: relative;
 }
@@ -208,6 +216,21 @@ h5{
 
 [class^="logo-container"]{
     padding-bottom: .5rem;
+}
+
+.sidebar-top ul li:first-child{
+    position: relative;
+}
+
+.sidebar-top ul li:first-child::before{
+    content:'';
+    display: inline-block;
+    width: 7px;
+    height: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
 }
 
 .sidebar-middle{
@@ -274,6 +297,10 @@ h5{
 
 .button-list .icon-big{
     font-size: 2rem;
+}
+
+.button-list .icon-big:hover{
+    transform: scale(1.2);
 }
 
 [class^="progress-bar-"]{

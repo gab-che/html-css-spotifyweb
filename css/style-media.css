@@ -36,6 +36,12 @@
         display: block;
     }
 
+    .sidebar-top ul li:first-child::before{
+        width: 4px;
+        left: -.5rem;
+        top: 0;
+    }
+
     .sidebar-bottom,
     .sidebar-middle{
         width: 100%;
