@@ -156,6 +156,22 @@ h5{
 }
 
 /* Proprietà sezione centrale */
+.menu ul li:first-child{
+    position: relative;
+}
+
+.menu ul li:first-child::after{
+    content:'';
+    display: inline-block;
+    width: 40%;
+    height: 3px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .header button{
     display: block;
     margin-left: auto;
