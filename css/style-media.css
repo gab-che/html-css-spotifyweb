@@ -1,9 +1,5 @@
 /* Mobile - schermo piccolo - SM */
 @media screen and (min-width: 568px){
-    html{
-        font-size: 14px;
-    }
-
     .sidebar-container{
         width: 250px;
         text-align: left;
@@ -44,7 +40,7 @@
 /* Tablet - schermo medio - MD */
 @media screen and (min-width: 768px){
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .col-1_4{
@@ -59,7 +55,7 @@
 /* Desktop - schermo grande - LG */
 @media screen and (min-width: 992px){
     html{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .col-1_6{
