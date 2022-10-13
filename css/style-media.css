@@ -2,7 +2,7 @@
 @media screen and (min-width: 568px){
     .sidebar-container{
         width: 250px;
-        text-align: left;
+        align-items: flex-start;
     }
 
     .sidebar-container a{
@@ -23,8 +23,8 @@
     }
     
     .logo-container-big{
-        width: 60%;
         display: block;
+        width: 150px;
     }
     
     .logo-container-big img{
@@ -34,6 +34,15 @@
 
     .playlist{
         display: block;
+    }
+
+    .sidebar-bottom{
+        width: 100%;
+        text-align: start;
+    }
+
+    .profile-name{
+        border-top: 1px solid var(--text-secondary);
     }
 }
 

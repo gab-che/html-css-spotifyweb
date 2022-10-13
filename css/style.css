@@ -97,7 +97,6 @@ button{
     background-color: var(--bg-sidebar);
     padding: var(--standard-size);
     flex-direction: column;
-    text-align: center;
 }
 
 .main-container{
@@ -161,9 +160,13 @@ h5{
 }
 
 /* Proprietà sidebar */
+.logo-container-small,
 .sidebar-container img{
     width: 30px;
-    display: inline;
+}
+
+.sidebar-container img{
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -177,12 +180,32 @@ h5{
     display: none;
 }
 
+[class^="logo-container"]{
+    padding-bottom: .5rem;
+}
+
 .sidebar-middle{
     overflow: auto;
 }
 
+.sidebar-middle i{
+    color: var(--bg-sidebar);
+    background-color: var(--text-secondary);
+    padding: .5rem;
+}
+
+.sidebar-middle h4{
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+
+.sidebar-bottom{
+    width: 100%;
+    text-align: center;
+}
+
 .profile-name{
-    border-top: 1px solid var(--text-secondary);
+    border-top: none;
 }
 
 /* Proprietà footer */
