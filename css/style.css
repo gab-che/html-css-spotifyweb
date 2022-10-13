@@ -13,6 +13,7 @@
     --bg-footer: #282828;
     --text-primary: #ffffff;
     --text-secondary: #a3a3a3;
+    --standard-size: 1rem;
 }
 
 body{
@@ -24,7 +25,7 @@ body{
 }
 
 section{
-    padding: 1rem;
+    padding: var(--standard-size);
 }
 
 img{
@@ -35,6 +36,7 @@ img{
 li{
     list-style: none;
 }
+
 a{
     color: var(--text-secondary);
 }
@@ -78,8 +80,8 @@ a{
 }
 
 .bottom-container{
-    height: 80px;
     background-color: var(--bg-footer);
+    padding: var(--standard-size);
 }
 
 .sidebar-container{
@@ -94,7 +96,7 @@ a{
 /* Proprietà specifiche sezione principale */
 .header{
     background-color: var(--bg-header);
-    padding: 2rem;
+    padding: 2rem var(--standard-size);
     /* position fixed? */
 }
 
@@ -103,8 +105,12 @@ a{
 }
 
 .menu{
-    border: 1px dashed antiquewhite;
-    padding: 1rem;
+    padding: var(--standard-size);
+}
+
+.menu button{
+    display: block;
+    margin-left: auto;
 }
 
 .row{
@@ -122,7 +128,7 @@ a{
 
 /* Proprietà sidebar */
 .sidebar-container{
-    padding: .5rem;
+    padding: var(--standard-size);
     flex-direction: column;
 }
 
