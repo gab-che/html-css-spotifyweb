@@ -16,6 +16,10 @@
     --standard-size: 1rem;
 }
 
+html{
+    font-size: 12px;
+}
+
 body{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,6 +39,7 @@ img{
 
 li{
     list-style: none;
+    padding: .5rem;
 }
 
 a{
@@ -46,7 +51,6 @@ button{
     background-color: transparent;
     border: none;
     color: var(--text-primary);
-    padding: var(--standard-size);
     cursor: pointer;
 }
 /* Proprietà flex */
@@ -91,6 +95,9 @@ button{
 .sidebar-container{
     width: 80px;
     background-color: var(--bg-sidebar);
+    padding: var(--standard-size);
+    flex-direction: column;
+    text-align: center;
 }
 
 .main-container{
@@ -131,32 +138,24 @@ button{
 }
 
 /* Proprietà sidebar */
-.sidebar-container{
-    padding: var(--standard-size);
-    flex-direction: column;
-    text-align: center;
-}
-
 .sidebar-container img{
     width: 30px;
     display: inline;
     vertical-align: middle;
 }
 
-.sidebar-middle{
-    overflow: auto;
+.sidebar-container li{
+    margin-left: -.5rem;
 }
 
-.logo-container-big{
-    display: none;
-}
-
-.sidebar-container span{
-    display: none;
-}
-
+.sidebar-container span,
+.logo-container-big,
 .playlist{
     display: none;
+}
+
+.sidebar-middle{
+    overflow: auto;
 }
 
 .profile-name{
@@ -173,9 +172,7 @@ button{
 }
 
 .album-img{
-    width: 12vh;
-    border: 1px dashed snow;
-    padding: .5rem;
+    width: 7vh;
     aspect-ratio: 1;
 }
 
