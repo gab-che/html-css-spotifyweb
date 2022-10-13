@@ -35,13 +35,12 @@ img{
 li{
     list-style: none;
 }
+a{
+    color: var(--text-secondary);
+}
 
 a{
     text-decoration: none;
-}
-
-i{
-    font-size: 30px;
 }
 
 /* Proprietà flex */
@@ -61,9 +60,21 @@ i{
     flex-wrap: wrap;
 }
 
+.justify{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.sp-between{
+    justify-content: space-between;
+}
+
 /* Container principali */
 .top-container{
-    height: calc(100vh - 80px);
+    overflow: auto;
 }
 
 .bottom-container{
@@ -92,12 +103,13 @@ i{
 }
 
 .menu{
-    background-color: beige;
+    border: 1px dashed antiquewhite;
     padding: 1rem;
 }
 
 .row{
     margin: 0 -.5rem;
+    text-align: center;
 }
 
 .col-1_2{
@@ -108,30 +120,19 @@ i{
     padding: 0.5rem;
 }
 
-/* .card{
-} */
-
 /* Proprietà sidebar */
 .sidebar-container{
     padding: .5rem;
     flex-direction: column;
 }
 
-.sidebar-container i{
+.sidebar-container .icon{
     vertical-align: middle
 }
-
-/* .sidebar-top{
-    
-} */
 
 .sidebar-middle{
     overflow: auto;
 }
-
-/* .sidebar-bottom{
-    
-} */
 
 .logo-container-small{
     width: 40px;
@@ -150,10 +151,26 @@ i{
     display: none;
 }
 
-.download i{
-    font-size: 15px;
-}
-
 .profile-name{
     border-top: 1px solid var(--text-secondary);
+}
+
+/* Proprietà footer */
+.player-left .link-list{
+    flex-direction: column;
+}
+
+.player-middle{
+    flex-direction: column;
+}
+
+.album-img{
+    width: 12vh;
+    border: 1px dashed snow;
+    padding: .5rem;
+    aspect-ratio: 1;
+}
+
+.album-text{
+    flex-direction: column;
 }

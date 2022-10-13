@@ -5,8 +5,7 @@
     }
 
     .sidebar-container span{
-        display: inline-block;
-        vertical-align: middle;
+        display: block;
     }
 
     .logo-container-small{
@@ -27,6 +26,10 @@
 @media screen and (min-width: 768px){
     .col-1_4{
         flex-basis: calc(100% / 4);
+    }
+
+    .player-left .link-list{
+        flex-direction: row;
     }
 }
 

@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Sezione grande principale -->
-    <div class="top-container flex">
+    <div class="top-container flex grow">
 
         <!-- Sidebar -->
         <div class="sidebar-container shrink flex">
@@ -30,19 +30,7 @@
                 <ul class="link-list">
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-house"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-solid fa-house"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-solid fa-house"></i>
+                            <!-- icona -->
                             <span>Home</span>
                         </a>
                     </li>
@@ -56,7 +44,7 @@
                     <ul class="link-list">
                         <li>
                             <a href="#">
-                                <i class="fa-solid fa-plus"></i>
+                                <!-- icona -->
                                 <span>Crea playlist</span>
                             </a>
                         </li>
@@ -98,14 +86,14 @@
             <div class="sidebar-bottom shrink">
                 <div class="download">
                     <a href="#">
-                        <i class="fa-regular fa-circle-down"></i>
+                        <!-- icona -->
                         <span>Installa app</span>
                     </a>
                 </div>
 
                 <div class="profile-name">
                     <a href="#">
-                        <i class="fa-solid fa-user"></i>
+                        <!-- icona -->
                         <span>Gabriella</span>
                     </a>
                 </div>
@@ -334,6 +322,59 @@
     </div>
 
     <!-- Sezione footer fissa -->
-    <div class="bottom-container"></div>
+    <div class="bottom-container flex shrink sp-between">
+
+        <!-- Sx- album e icone piccole (2 blocchi affiancati)-->
+        <div class="player-left flex shrink sp-between align">
+
+            <!-- Album -->
+            <div class="album flex">
+                <div class="album-img">
+                    <img src="" alt="">
+                </div>
+                <div class="album-text flex justify">
+                    <p class="song">Song</p>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+
+            <!-- Icone -->
+            <div class="link-list-container">
+                <ul class="link-list flex">
+                    <li><a href="#"><i>e</i></a></li>
+                    <li><a href="#"><i>f</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Centro- bottoni e barra (2 blocchi unosottolaltro)-->
+        <div class="player-middle grow flex justify">
+            <ul class="button-list flex justify">
+                <li><button>d</button></li>
+                <li><button>d</button></li>
+                <li><button>d</button></li>
+                <li><button>d</button></li>
+            </ul>
+            <div class="player-bar flex justify">
+                <span class="time">3.14</span>
+                <div class="progress-bar">progress</div>
+                <span class="time">3.14</span>
+            </div>
+        </div>
+
+        <!-- Dx- volume e icone piccole (elementi affiancati)-->
+        <div class="player-right shrink flex align">
+            <ul class="link-list flex">
+                <li><a href="#"><i>i</i></i></a></li>
+                <li><a href="#"><i>i</i></a></li>
+                <li>
+                    <a href="#" class="flex">
+                        <i>v</i>
+                        <div class="progress-bar">vol</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
