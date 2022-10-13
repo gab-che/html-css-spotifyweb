@@ -203,9 +203,31 @@ h5{
     width: 100%;
     text-align: center;
 }
+.sidebar-bottom .download{
+    padding-bottom: 2rem;
+}
 
-.profile-name{
-    border-top: none;
+.sidebar-bottom .download img{
+    width: 20px;
+}
+
+.sidebar-bottom .profile-name a{
+    margin-left: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-name a::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    bottom: -18px;
+    z-index: -1;
+    background-color: var(--text-secondary);
 }
 
 /* Proprietà footer */

@@ -41,8 +41,20 @@
         text-align: start;
     }
 
-    .profile-name{
+    .sidebar-bottom .profile-name{
         border-top: 1px solid var(--text-secondary);
+        padding-top: var(--standard-size);
+    }
+    
+    .profile-name a::before{
+        width: 30px;
+        height: 30px;
+        left: -5px;
+        bottom: -5px;
+    }
+
+    .profile-name span{
+        padding-left: var(--standard-size);
     }
 }
 
