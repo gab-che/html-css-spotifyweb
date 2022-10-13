@@ -39,12 +39,16 @@ li{
 
 a{
     color: var(--text-secondary);
-}
-
-a{
     text-decoration: none;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    padding: var(--standard-size);
+    cursor: pointer;
+}
 /* Proprietà flex */
 .flex{
     display: flex;
