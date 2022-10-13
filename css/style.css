@@ -100,17 +100,17 @@ a{
     /* position fixed? */
 }
 
+.header button{
+    display: block;
+    margin-left: auto;
+}
+
 .main-section{
     background-color: var(--bg-main);
 }
 
 .menu{
     padding: var(--standard-size);
-}
-
-.menu button{
-    display: block;
-    margin-left: auto;
 }
 
 .row{
@@ -130,19 +130,17 @@ a{
 .sidebar-container{
     padding: var(--standard-size);
     flex-direction: column;
+    text-align: center;
 }
 
-.sidebar-container .icon{
-    vertical-align: middle
+.sidebar-container img{
+    width: 30px;
+    display: inline;
+    vertical-align: middle;
 }
 
 .sidebar-middle{
     overflow: auto;
-}
-
-.logo-container-small{
-    width: 40px;
-    margin: auto;
 }
 
 .logo-container-big{
