@@ -343,7 +343,7 @@
     <div class="bottom-container flex shrink sp-between">
 
         <!-- Sx- album e icone piccole (2 blocchi affiancati)-->
-        <div class="player-left flex shrink sp-between align">
+        <div class="player-left flex sp-between align">
 
             <!-- Album -->
             <div class="album flex">
@@ -366,30 +366,30 @@
         </div>
 
         <!-- Centro- bottoni e barra (2 blocchi unosottolaltro)-->
-        <div class="player-middle grow flex justify">
-            <ul class="button-list flex justify">
+        <div class="player-middle flex justify">
+            <ul class="button-list flex justify align">
                 <li><button><i class="fa-solid fa-shuffle"></i></button></li>
                 <li><button><i class="fa-solid fa-backward-step"></i></button></li>
-                <li><button><i class="fa-regular fa-circle-play"></i></button></li>
+                <li><button class="icon-big"><i class="fa-regular fa-circle-play"></i></button></li>
                 <li><button><i class="fa-solid fa-forward-step"></i></button></li>
                 <li><button><i class="fa-solid fa-rotate-right"></i></i></button></li>
             </ul>
-            <div class="player-bar flex justify">
+            <div class="player-bar flex justify align">
                 <span class="time">3.14</span>
-                <div class="progress-bar">progress</div>
+                <div class="progress-bar-music"></div>
                 <span class="time">3.14</span>
             </div>
         </div>
 
         <!-- Dx- volume e icone piccole (elementi affiancati)-->
-        <div class="player-right shrink flex align">
+        <div class="player-right flex align">
             <ul class="link-list flex">
                 <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-desktop"></i></a></li>
                 <li>
-                    <a href="#" class="flex">
+                    <a href="#" class="flex align">
                         <i class="fa-solid fa-volume-low"></i>
-                        <div class="progress-bar">vol</div>
+                        <div class="progress-bar-vol"></div>
                     </a>
                 </li>
             </ul>

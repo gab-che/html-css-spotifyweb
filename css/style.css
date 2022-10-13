@@ -237,6 +237,33 @@ h5{
 
 .player-middle{
     flex-direction: column;
+    margin: 0 .5rem;
+    width: 40%;
+}
+
+.button-list button{
+    padding: 0 var .5rem;
+}
+
+.button-list .icon-big{
+    font-size: 2rem;
+}
+
+[class^="progress-bar-"]{
+    height: 3px;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg, var(--text-primary) 25%, var(--text-secondary) 25%);
+}
+
+.progress-bar-music{
+    width: 100%;
+    margin: 0 .5rem;
+}
+
+.progress-bar-vol{
+    width: 70px;
+    margin-left: .5rem;
+    margin-right: -.5rem;
 }
 
 .player-right i{

@@ -56,6 +56,10 @@
     .profile-name span{
         padding-left: var(--standard-size);
     }
+
+    .button-list button{
+        padding: 0 var(--standard-size);
+    }
 }
 
 /* Tablet - schermo medio - MD */
