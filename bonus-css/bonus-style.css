@@ -1,0 +1,368 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Properties */
+:root{
+    --bg-sidebar: #000000;
+    --bg-header: #080b12;
+    --bg-main: #141922;
+    --bg-footer: #282828;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --standard-size: 1rem;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    padding: var(--standard-size);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    padding: .5rem;
+}
+
+a{
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--text-primary);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+/* Proprietà flex */
+.flex{
+    display: flex;
+}
+
+.grow{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.shrink{
+    flex-shrink: 0;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.sp-between{
+    justify-content: space-between;
+}
+
+/* Container principali */
+.bottom-container{
+    background-color: var(--bg-footer);
+    padding: var(--standard-size);
+}
+
+.sidebar-container{
+    width: 80px;
+    background-color: var(--bg-sidebar);
+    padding: var(--standard-size);
+    flex-direction: column;
+}
+
+/* Formattazione testo */
+.section-title{
+    padding-bottom: 2rem;
+}
+
+h4, h5{
+    padding-top: .5rem;
+}
+
+h5{
+    color: var(--text-secondary);
+}
+
+/* Proprietà specifiche sezione principale */
+.header{
+    background-color: var(--bg-header);
+    padding: var(--standard-size);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-section{
+    background-color: var(--bg-main);
+}
+
+.header button,
+.menu{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.menu{
+    padding: var(--standard-size);
+}
+
+.row{
+    margin: 0 -.5rem;
+    text-align: center;
+}
+
+.col-1_2{
+    flex-basis: calc(100% / 2);
+}
+
+.card-container{
+    padding: 0.5rem;
+}
+
+/* Proprietà sezione centrale */
+.menu ul li:first-child{
+    position: relative;
+}
+
+.menu ul li:first-child::after{
+    content:'';
+    display: inline-block;
+    width: 40%;
+    height: 3px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header button{
+    display: block;
+    margin-left: auto;
+    border: 1px solid var(--text-primary);
+    padding: var(--standard-size) 3rem;
+    border-radius: 25px;
+}
+
+.header button:hover{
+    transform: scale(1.03);
+}
+
+.card-img{
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay button i{
+    font-size: 3rem;
+}
+
+.card-img:hover .overlay{
+    opacity: 1;
+}
+
+.round-img img,
+.overlay-round{
+    border-radius: 50%;
+}
+
+/* Proprietà sidebar */
+.logo-container-small,
+.sidebar-container img{
+    width: 30px;
+}
+
+.sidebar-container img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebar-container li{
+    margin-left: -.5rem;
+}
+
+.sidebar-container span,
+.logo-container-big,
+.playlist{
+    display: none;
+}
+
+[class^="logo-container"]{
+    padding-bottom: .5rem;
+}
+
+.sidebar-top ul li:first-child{
+    position: relative;
+}
+
+.sidebar-top ul li:first-child::before{
+    content:'';
+    display: inline-block;
+    width: 7px;
+    height: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+}
+
+.sidebar-middle i{
+    color: var(--bg-sidebar);
+    background-color: var(--text-secondary);
+    padding: .5rem;
+}
+
+.sidebar-middle h4{
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+
+.sidebar-bottom{
+    width: 100%;
+    text-align: center;
+}
+.sidebar-bottom .download{
+    padding: 2rem 0;
+}
+
+.sidebar-bottom .download img{
+    width: 20px;
+}
+
+.sidebar-bottom .profile-name a{
+    margin-left: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-name a::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    bottom: -18px;
+    z-index: -1;
+    background-color: var(--text-secondary);
+}
+
+/* Proprietà footer */
+.player-left .link-list{
+    flex-direction: column;
+    padding-left: .5rem;
+}
+
+.player-middle{
+    flex-direction: column;
+    margin: 0 .5rem;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+.button-list button{
+    padding: 0 var .5rem;
+}
+
+.button-list .icon-big{
+    font-size: 2rem;
+}
+
+.button-list .icon-big:hover{
+    transform: scale(1.2);
+}
+
+[class^="progress-bar-"]{
+    height: 4px;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg, var(--text-primary) 25%, var(--text-secondary) 25%);
+}
+
+[class^="progress-bar-"]:hover{
+    background-image: linear-gradient(90deg, greenyellow 25%, var(--text-secondary) 25%);
+    transform: scaleY(1.4);
+    cursor: pointer;
+    position: relative;
+}
+
+[class^="progress-bar-"]:hover::after{
+    content: '';
+    width: 11px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: -2px;
+    border-radius: 50%;
+}
+
+.progress-bar-music{
+    width: 100%;
+    margin: 0 3%;
+}
+
+.progress-bar-vol{
+    display: none;
+}
+
+.time{
+    font-size: .8rem;
+}
+
+.player-right i{
+    color: var(--text-primary);
+}
+
+.album-img{
+    width: 7vh;
+    aspect-ratio: 1;
+}
+
+.album-text{
+    flex-direction: column;
+    padding-left: .5rem;
+}
+
+.album-text .song{
+    color: var(--text-secondary);
+    font-size: .8rem;
+}

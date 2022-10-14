@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Bonus</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bonus-css/bonus-style.css">
+    <link rel="stylesheet" href="bonus-css/bonus-style-media.css">
+</head>
+<body>
+    <!-- Sezione grande principale -->
+    <div class="top-container flex grow">
+
+        <!-- Sidebar -->
+        <div class="sidebar-container shrink flex align">
+
+            <!-- Sidebar top - logo e lista icone -->
+            <div class="sidebar-top shrink">
+                <div class="logo-container-small">
+                    <img src="img/logo-small.svg" alt="">
+                </div>
+                <div class="logo-container-big">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <ul class="link-list">
+                    <li>
+                        <a href="#">
+                            <img src="img/home.svg" alt="">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sidebar middle - playlist (contenuto no in xxs) -->
+            <div class="sidebar-middle grow">
+                <div class="playlist">
+                    <h4>Playlist</h4>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Crea playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Nome playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Nome playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Nome playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Nome playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Nome playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Nome playlist</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar bottom - installa e profilo -->
+            <div class="sidebar-bottom shrink">
+                <div class="download">
+                    <a href="#">
+                        <img src="img/download.svg" alt="">
+                        <span>Installa app</span>
+                    </a>
+                </div>
+
+                <div class="profile-name">
+                    <a href="#">
+                        <img src="img/profile.svg" alt="">
+                        <span>Gabriella</span>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!-- Sezione centrale -->
+        <div class="main-container grow">
+
+            <!-- Header -->
+            <div class="header">
+                <button>effettua l'upgrade</button>
+            </div>
+
+            <!-- Sezione principale con contenuti -->
+            <div class="main-section">
+
+                <!-- Menu -->
+                <div class="menu">
+                    <ul class="link-list flex wrap justify">
+                        <li><a href="#">in evidenza</a></li>
+                        <li><a href="#">podcast</a></li>
+                        <li><a href="#">classifiche</a></li>
+                        <li><a href="#">generi e mood</a></li>
+                        <li><a href="#">nuove uscite</a></li>
+                        <li><a href="#">scopri</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sezione 1 - Recently played -->
+                <section>
+
+                    <!-- Titolo sezione -->
+                    <div class="section-title">
+                        <h2>Recently Played</h2>
+                    </div>
+
+                    <!-- Riga sezione -->
+                    <div class="row flex wrap">
+
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Heavy Metal</h4>
+                                        <h5>Artist Name</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/stranger.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                        <h5>Kyle Dixon & Michael Stein</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/aquietplace.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>A quiet place</h4>
+                                        <h5>Artist Name</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/split.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Split</h4>
+                                        <h5>Artist Name</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/cure.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>A cure for wellness</h4>
+                                        <h5>Artist Name</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/sinister.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Sinister</h4>
+                                        <h5>Artist Name</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sezione 2 - Creato per -->
+                <section>
+                    <!-- Titolo sezione -->
+                    <div class="section-title">
+                        <h2>Creato per</h2>
+                        <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+                    </div>
+
+                    <!-- Riga sezione -->
+                    <div class="row flex wrap">
+
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/radar.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Release Radar</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/mixdaily.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Daily Mix 1</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Sezione 3 - Artisti popolari -->
+                <section class="round-img">
+                    <!-- Titolo sezione -->
+                    <div class="section-title">
+                        <h2>Artisti più popolari</h2>
+                        <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+                    </div>
+
+                    <!-- Riga sezione -->
+                    <div class="row flex wrap">
+
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay overlay-round flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/youg.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Lana del Rey</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Colonna responsive -->
+                        <div class="col-1_2 col-1_4 col-1_6">
+
+                            <!-- Card  -->
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="overlay overlay-round flex justify align">
+                                            <button><i class="fa-regular fa-circle-play"></i></button>
+                                        </div>
+                                        <img src="img/einaudi.jpeg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Ludovico Einaudi</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione footer fissa -->
+    <div class="bottom-container flex shrink sp-between">
+
+        <!-- Sx- album e icone piccole (2 blocchi affiancati)-->
+        <div class="player-left shrink flex align">
+
+            <!-- Album -->
+            <div class="album flex">
+                <div class="album-img">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="album-text flex justify">
+                    <p class="artist">Sinister</p>
+                    <p class="song">Song Name</p>
+                </div>
+            </div>
+
+            <!-- Icone -->
+            <div class="link-list-container">
+                <ul class="link-list flex">
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-folder"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Centro- bottoni e barra (2 blocchi unosottolaltro)-->
+        <div class="player-middle grow flex justify">
+            <ul class="button-list flex justify align">
+                <li><button><i class="fa-solid fa-shuffle"></i></button></li>
+                <li><button><i class="fa-solid fa-backward-step"></i></button></li>
+                <li><button class="icon-big"><i class="fa-regular fa-circle-play"></i></button></li>
+                <li><button><i class="fa-solid fa-forward-step"></i></button></li>
+                <li><button><i class="fa-solid fa-rotate-right"></i></i></button></li>
+            </ul>
+            <div class="player-bar flex justify align">
+                <span class="time">1.42</span>
+                <div class="progress-bar-music"></div>
+                <span class="time">3.14</span>
+            </div>
+        </div>
+
+        <!-- Dx- volume e icone piccole (elementi affiancati)-->
+        <div class="player-right shrink flex align">
+            <ul class="link-list flex">
+                <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-desktop"></i></a></li>
+                <li>
+                    <a href="#" class="flex align">
+                        <i class="fa-solid fa-volume-low"></i>
+                        <div class="progress-bar-vol"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

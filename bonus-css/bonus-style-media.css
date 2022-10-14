@@ -1,0 +1,113 @@
+/* Mobile - schermo piccolo - SM */
+@media screen and (min-width: 568px){
+    .sidebar-container{
+        width: 250px;
+        align-items: flex-start;
+    }
+
+    .sidebar-container a{
+        display: block;
+    }
+
+    .sidebar-container span{
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .sidebar-container img{
+        width: 20px;
+    }
+
+    .logo-container-small{
+        display: none;
+    }
+    
+    .logo-container-big{
+        display: block;
+        width: 150px;
+    }
+    
+    .logo-container-big img{
+        display: block;
+        width: 100%;
+    }
+
+    .playlist{
+        display: block;
+    }
+
+    .sidebar-top ul li:first-child::before{
+        width: 4px;
+        left: -.5rem;
+        top: 0;
+    }
+
+    .sidebar-bottom,
+    .sidebar-middle{
+        width: 100%;
+        text-align: start;
+    }
+
+    .sidebar-bottom .profile-name{
+        border-top: 1px solid var(--text-secondary);
+        padding-top: var(--standard-size);
+    }
+    
+    .profile-name a::before{
+        width: 30px;
+        height: 30px;
+        left: -5px;
+        bottom: -5px;
+    }
+
+    .profile-name span{
+        padding-left: var(--standard-size);
+    }
+
+    .player-left .link-list{
+        flex-direction: column;
+        padding-left: var(--standard-size);
+    }
+
+    .button-list button{
+        padding: 0 var(--standard-size);
+    }
+
+    .progress-bar-vol{
+        display: inline;
+        width: 70px;
+        margin-left: .5rem;
+        margin-right: -.5rem;
+    }
+}
+
+/* Tablet - schermo medio - MD */
+@media screen and (min-width: 768px){
+    html{
+        font-size: 14px;
+    }
+
+    .col-1_4{
+        flex-basis: calc(100% / 4);
+    }
+
+    .player-left .link-list{
+        flex-direction: row;
+        padding-left: 2rem;
+    }
+}
+
+/* Desktop - schermo grande - LG */
+@media screen and (min-width: 992px){
+    html{
+        font-size: 16px;
+    }
+
+    .col-1_6{
+        flex-basis: calc(100% / 6);
+    }
+
+    .overlay button i{
+        font-size: 2rem;
+    }
+}
