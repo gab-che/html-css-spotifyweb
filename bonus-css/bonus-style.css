@@ -336,14 +336,36 @@ h5{
     background-image: linear-gradient(90deg, var(--text-primary) 25%, var(--text-secondary) 25%);
 }
 
-[class^="progress-bar-"]:hover{
+.progress-bar-music{
+    width: 100%;
+    margin: 0 3%;
+}
+
+.volume{
+    position: relative;
+}
+
+.progress-bar-vol{
+    display:none;
+    width: 80px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -42px;
+    left: -30px;
+}
+
+.volume:hover .progress-bar-vol{
+    display: block;
+}
+
+.progress-bar-music:hover{
     background-image: linear-gradient(90deg, greenyellow 25%, var(--text-secondary) 25%);
     transform: scaleY(1.4);
     cursor: pointer;
     position: relative;
 }
 
-[class^="progress-bar-"]:hover::after{
+.progress-bar-music:hover::after{
     content: '';
     width: 11px;
     height: 8px;
@@ -354,20 +376,9 @@ h5{
     border-radius: 50%;
 }
 
-.progress-bar-music{
-    width: 100%;
-    margin: 0 3%;
-}
-
-.progress-bar-vol{
-    display: none;
-}
-
 .time{
     font-size: .8rem;
 }
-
-
 
 .album-img{
     width: 7vh;

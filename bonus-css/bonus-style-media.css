@@ -74,10 +74,12 @@
     }
 
     .progress-bar-vol{
-        display: inline;
-        width: 70px;
-        margin-left: .5rem;
-        margin-right: -.5rem;
+        display: block;
+        transform: rotate(0deg);
+        width: 80px;
+        position: relative;
+        top: -53%;
+        left: 19%;
     }
 }
 
