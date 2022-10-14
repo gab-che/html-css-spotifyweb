@@ -115,3 +115,26 @@
         font-size: 2rem;
     }
 }
+
+@media (max-height: 450px) and (orientation: landscape){
+    .sidebar-container{
+        width: 200px;
+    }
+
+    .sidebar-top .link-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar-top .link-list span{
+        display: none;
+    }
+
+    .sidebar-top .link-list img{
+        width: 30px;
+    }
+
+    .sidebar-bottom .download{
+        padding: .5rem 0;
+    }
+}
