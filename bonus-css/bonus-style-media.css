@@ -89,6 +89,8 @@
 
     .col-1_4{
         flex-basis: calc(100% / 4);
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 
     .player-left .link-list{

@@ -76,6 +76,11 @@ button{
     flex-wrap: wrap;
 }
 
+.nowrap{
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
 .justify{
     justify-content: center;
 }
@@ -145,6 +150,8 @@ h5{
 
 .col-1_2{
     flex-basis: calc(100% / 2);
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .card-container{
