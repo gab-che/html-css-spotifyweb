@@ -64,8 +64,20 @@
         padding-left: var(--standard-size);
     }
 
+    .player-left .link-list{
+        flex-direction: column;
+        padding-left: var(--standard-size);
+    }
+
     .button-list button{
         padding: 0 var(--standard-size);
+    }
+
+    .progress-bar-vol{
+        display: inline;
+        width: 70px;
+        margin-left: .5rem;
+        margin-right: -.5rem;
     }
 }
 

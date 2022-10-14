@@ -64,6 +64,7 @@ button{
 
 .grow{
     flex-grow: 1;
+    overflow: auto;
 }
 
 .shrink{
@@ -87,10 +88,6 @@ button{
 }
 
 /* Container principali */
-.top-container{
-    overflow: auto;
-}
-
 .bottom-container{
     background-color: var(--bg-footer);
     padding: var(--standard-size);
@@ -101,10 +98,6 @@ button{
     background-color: var(--bg-sidebar);
     padding: var(--standard-size);
     flex-direction: column;
-}
-
-.main-container{
-    overflow: auto;
 }
 
 /* Formattazione testo */
@@ -124,7 +117,9 @@ h5{
 .header{
     background-color: var(--bg-header);
     padding: var(--standard-size);
-    /* position fixed? */
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .main-section{
@@ -249,10 +244,6 @@ h5{
     top: 0;
 }
 
-.sidebar-middle{
-    overflow: auto;
-}
-
 .sidebar-middle i{
     color: var(--bg-sidebar);
     background-color: var(--text-secondary);
@@ -298,13 +289,14 @@ h5{
 /* Proprietà footer */
 .player-left .link-list{
     flex-direction: column;
-    padding-left: var(--standard-size);
+    padding-left: .5rem;
 }
 
 .player-middle{
     flex-direction: column;
     margin: 0 .5rem;
-    width: 40%;
+    max-width: 40%;
+    overflow: hidden;
 }
 
 .button-list button{
@@ -320,9 +312,27 @@ h5{
 }
 
 [class^="progress-bar-"]{
-    height: 3px;
+    height: 4px;
     border-radius: 2px;
     background-image: linear-gradient(90deg, var(--text-primary) 25%, var(--text-secondary) 25%);
+}
+
+[class^="progress-bar-"]:hover{
+    background-image: linear-gradient(90deg, greenyellow 25%, var(--text-secondary) 25%);
+    transform: scaleY(1.4);
+    cursor: pointer;
+    position: relative;
+}
+
+[class^="progress-bar-"]:hover::after{
+    content: '';
+    width: 11px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: -2px;
+    border-radius: 50%;
 }
 
 .progress-bar-music{
@@ -331,9 +341,7 @@ h5{
 }
 
 .progress-bar-vol{
-    width: 70px;
-    margin-left: .5rem;
-    margin-right: -.5rem;
+    display: none;
 }
 
 .time{
