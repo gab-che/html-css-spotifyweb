@@ -42,14 +42,16 @@ li{
     padding: .5rem;
 }
 
-a{
+a, label{
     color: var(--text-secondary);
     text-decoration: none;
     transition: color .3s linear;
 }
 
-a:hover{
+a:hover,
+label:hover{
     color: var(--text-primary);
+    cursor: pointer;
 }
 
 button{
@@ -130,10 +132,12 @@ h5{
 
 .main-section{
     background-color: var(--bg-main);
+    overflow: scroll;
+    height: 100%;
 }
 
 .header button,
-.menu{
+.menu label{
     text-transform: uppercase;
     font-weight: bold;
     font-size: .8rem;
@@ -141,6 +145,7 @@ h5{
 
 .menu{
     padding: var(--standard-size);
+    position: relative;
 }
 
 .row{
@@ -159,22 +164,6 @@ h5{
 }
 
 /* Proprietà sezione centrale */
-.menu ul li:first-child{
-    position: relative;
-}
-
-.menu ul li:first-child::after{
-    content:'';
-    display: inline-block;
-    width: 40%;
-    height: 3px;
-    background-color: greenyellow;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .header button{
     display: block;
     margin-left: auto;
@@ -189,8 +178,45 @@ h5{
     background-color: var(--bg-main);
 }
 
+.menu input{
+    display: none;
+}
+
+.menu label{
+    position: relative;
+}
+
+.menu input:checked + label::after{
+    content:'';
+    display: inline-block;
+    width: 40%;
+    height: 3px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.subsection{
+    padding: var(--standard-size) 0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2{
+    display: block;
+}
+
 .card-img{
     position: relative;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .overlay{
